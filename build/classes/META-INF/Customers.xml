@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence/orm" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence/orm http://xmlns.jcp.org/xml/ns/persistence/orm_2_1.xsd">
+<description>The minimal mappings for a persistent entity in XML.</description>
+    <entity name="Customers" class="Entities.Customers" access="FIELD">
+    <table name="customer"/>
+        <attributes>
+            <id name="idCustomer"/>
+            <basic name="name">
+                <column name="name" length="30"/>
+            </basic> 
+            <basic name="address">
+                <column name="address" length="50"/>
+            </basic> 
+            <basic name="email">
+                <column name="email" length="50"/>
+            </basic>
+            <basic name="phone">
+               <column name="phone" length="15"/>
+            </basic>
+         </attributes>
+    </entity>
+</entity-mappings>
